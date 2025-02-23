@@ -1,6 +1,5 @@
 const bod = document.body;
 bod.style.background = "aliceblue"
-const counter = 0;
 
 document.getElementById("color_changer").addEventListener("click", function() {
 
@@ -12,6 +11,7 @@ document.getElementById("color_changer").addEventListener("click", function() {
 });
 
 document.getElementById("alert_but").addEventListener("click", function() {
+    event.preventDefault();
     var usrName = document.getElementById("usr_name").value;
     
     if (usrName.trim() == "") {
@@ -23,6 +23,7 @@ document.getElementById("alert_but").addEventListener("click", function() {
 });
 
 document.getElementById("val_test").addEventListener("click", function() {
+    event.preventDefault()
     var validation = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
     var usrText = document.getElementById("tester_text").value;
     
