@@ -9,15 +9,14 @@
 </head>
 <body>
 
-    <h1>Lab 4</h1>
+    <h1 id="head">Lab 4</h1>
 
     <div class="sections" id="alert">
         <form>
             <label for="usr_name">Name: </label>
-            <input type="text" id="usr_name" required>
+            <input type="text" id="usr_name" required placeholder="Name">
 
-            <!-- <button id="alert_but">Alert Me!</button> -->
-            <input type="submit" value="Alert Me!">
+            <button type="submit" id="alert_but">Alert Me!</button>
         </form>
     </div>
 
@@ -26,14 +25,19 @@
     </div>
 
     <div class="sections" id="test_tester">
-        <label for="test_text">Test Tester: </label>
-        <input type="text" id="tester_text">
-        <button>Validate Test</button>
+        <form>
+            <label for="test_text">Test Tester: </label>
+            <input type="text" required id="tester_text" placeholder="Text">
+            <button id="val_test">Validate Test</button>
+        </form>
     </div>
 
     <div class="sections" id="add_text">
-        <button>Add Text</button>
+        <button id="add_text_but">Add Text</button>
     </div>
     
 </body>
+
+<script src="lab4.js"></script>
+
 </html>
